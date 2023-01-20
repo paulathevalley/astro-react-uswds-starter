@@ -7,6 +7,7 @@
   "scripts": {
     "prettier": "prettier --write .",
     "prettier:verify": "prettier --check .",
+    "check": "npm run prettier:verify && tsc --noEmit && astro check",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "astro dev",
     "start": "astro dev",

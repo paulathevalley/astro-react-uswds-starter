@@ -1,6 +1,16 @@
 {
-  "extends": "astro/tsconfigs/base",
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    // Astro will directly run your TypeScript code, no transpilation needed.
+    "noEmit": true,
+    // Enable node-style module resolution, for things like npm package imports.
+    "moduleResolution": "node16",
+    // Enable JSON imports.
+    "resolveJsonModule": true,
+    // Enable stricter transpilation for better output.
+    "isolatedModules": true,
     // https://docs.astro.build/en/guides/aliases/
     "importsNotUsedAsValues": "error",
     "baseUrl": ".",
