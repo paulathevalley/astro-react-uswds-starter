@@ -6,8 +6,10 @@
   "type": "module",
   "scripts": {
     "prettier": "prettier --write .",
-    "prettier:verify": "prettier --check .",
-    "check": "npm run prettier:verify && tsc --noEmit && astro check",
+    "check:prettier": "prettier --check .",
+    "check:ts": "tsc --noEmit",
+    "check:astro": "astro check",
+    "check": "npm run check:prettier && npm run check:ts && npm run check:astro",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "astro dev",
     "start": "astro dev",
