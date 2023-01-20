@@ -1,12 +1,12 @@
 ---
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component front matter". It never runs in the browser.
-console.log('This runs in your terminal, not the browser!');
+import Tutorial from '../components/Tutorial.jsx';
 ---
 <!-- Below is your "component template." It's just HTML, but with
      some magic sprinkled in to help you build great templates. -->
 <html>
   <body>
-    <h1>Hello, World!</h1>
+    <Tutorial client:load /> <!-- client: directive is required for hydrating React -->
   </body>
 </html>

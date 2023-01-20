@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/paulathevalley/astro-react-uswds#readme",
   "dependencies": {
+    "@astrojs/react": "^1.2.2",
     "astro": "^1.9.2"
   }
 }
