@@ -10,5 +10,6 @@
       "@styles/*": ["src/styles/*"]
     },
   },
+  "include": ["custom.d.ts", "**/*.ts", "**/*.tsx", "**/*.mjs"],
   "exclude": ["node_modules"]
 }

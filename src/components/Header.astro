@@ -1,6 +1,5 @@
 --- 
 import { ReactComponent as SearchIcon } from '@uswds/uswds/img/usa-icons-bg/search--white.svg'
-// /assets/img/usa-icons-bg/search--white.svg
 --- 
 <script>
   // @uswds assumes `window` is defined
@@ -80,12 +79,8 @@ import { ReactComponent as SearchIcon } from '@uswds/uswds/img/usa-icons-bg/sear
             name="search"
           />
           <button class="usa-button" type="submit">
+            <span class="usa-sr-only">Search</span>
             <SearchIcon class="usa-search__submit-icon" />
-            <!-- <img
-              src="/assets/img/usa-icons-bg/search--white.svg"
-              class="usa-search__submit-icon"
-              alt="Search"
-            /> -->
           </button>
         </form>
       </section>
