@@ -1,16 +1,18 @@
 ---
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component front matter". It never runs in the browser.
-import Tutorial from '@components/Tutorial.jsx';
-import Header from '@components/Header.astro';
+import Tutorial from "@components/Tutorial.jsx";
+import Header from "@components/Header.astro";
 
-import '@styles/styles.scss'
+import "@styles/styles.scss";
 ---
+
 <!-- Below is your "component template." It's just HTML, but with
      some magic sprinkled in to help you build great templates. -->
 <html>
   <body>
     <Header />
-    <Tutorial client:load /> <!-- client: directive is required for hydrating React -->
+    <Tutorial client:load />
+    <!-- client: directive is required for hydrating React -->
   </body>
 </html>

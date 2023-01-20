@@ -1,12 +1,14 @@
 // Technical note: The @forward 'uswds' statement above references the uswds package in node_modules/@uswds/uswds/packages.
-@forward "uswds-theme"; 
+@forward "uswds-theme";
 @forward "uswds";
 
 // Custom styles
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-html { 
+html {
   box-sizing: border-box;
 }

@@ -5,6 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "prettier": "prettier --write .",
+    "prettier:verify": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "astro dev",
     "start": "astro dev",
@@ -26,6 +28,7 @@
     "@astrojs/react": "^1.2.2",
     "@uswds/uswds": "^3.3.0",
     "astro": "^1.9.2",
+    "prettier-plugin-astro": "^0.7.2",
     "sass": "^1.57.1",
     "vite-plugin-svgr": "^2.4.0"
   }
