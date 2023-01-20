@@ -6,7 +6,9 @@
     "baseUrl": ".",
     "paths": {
       "@assets/*": ["src/assets/*"],
-      "@components/*": ["src/components/*"]
+      "@components/*": ["src/components/*"],
+      "@styles/*": ["src/styles/*"]
     },
-  }
+  },
+  "exclude": ["node_modules"]
 }

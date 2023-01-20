@@ -1,7 +1,7 @@
 {
   "name": "astro-react-uswds",
   "version": "1.0.0",
-  "description": "astro integration with react and us web design system (uswds)",
+  "description": "astro with react and us web design system (uswds)",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -24,6 +24,8 @@
   "homepage": "https://github.com/paulathevalley/astro-react-uswds#readme",
   "dependencies": {
     "@astrojs/react": "^1.2.2",
-    "astro": "^1.9.2"
+    "@uswds/uswds": "^3.3.0",
+    "astro": "^1.9.2",
+    "sass": "^1.57.1"
   }
 }
