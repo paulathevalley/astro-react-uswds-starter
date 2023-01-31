@@ -14,13 +14,19 @@ import { ReactComponent as SearchIcon } from "@uswds/uswds/img/usa-icons-bg/sear
   <div class="usa-nav-container">
     <div class="usa-navbar">
       <div class="usa-logo" id="-logo">
-        <em class="usa-logo__text"><a href="/" title={t('Home')}>{t("Home")}</a></em>
+        <em class="usa-logo__text"
+          ><a href="/" title={t("Home")}>{t("Home")}</a></em
+        >
       </div>
       <button type="button" class="usa-menu-btn">{t("Menu")}</button>
     </div>
-    <nav aria-label={t('Primary navigation')} class="usa-nav">
+    <nav aria-label={t("Primary navigation")} class="usa-nav">
       <button type="button" class="usa-nav__close">
-        <img src="/assets/img/usa-icons/close.svg" role="img" alt={t("Close")} />
+        <img
+          src="/assets/img/usa-icons/close.svg"
+          role="img"
+          alt={t("Close")}
+        />
       </button>
       <ul class="usa-nav__primary usa-accordion">
         <li class="usa-nav__primary-item">
@@ -30,20 +36,20 @@ import { ReactComponent as SearchIcon } from "@uswds/uswds/img/usa-icons-bg/sear
             aria-expanded="false"
             aria-controls="basic-nav-section-one"
           >
-            <span>&lt;{t('Current section')}&gt;</span>
+            <span>&lt;{t("Current section")}&gt;</span>
           </button>
           <ul id="basic-nav-section-one" class="usa-nav__submenu">
             <li class="usa-nav__submenu-item">
-              <a href=""><span>&lt;{t('Navigation link')}&gt;</span></a>
+              <a href=""><span>&lt;{t("Navigation link")}&gt;</span></a>
             </li>
             <li class="usa-nav__submenu-item">
-              <a href=""><span>&lt;{t('Navigation link')}&gt;</span></a>
+              <a href=""><span>&lt;{t("Navigation link")}&gt;</span></a>
             </li>
             <li class="usa-nav__submenu-item">
-              <a href=""><span>&lt;{t('Navigation link')}&gt;</span></a>
+              <a href=""><span>&lt;{t("Navigation link")}&gt;</span></a>
             </li>
             <li class="usa-nav__submenu-item">
-              <a href=""><span>&lt;{t('Navigation link')}&gt;</span></a>
+              <a href=""><span>&lt;{t("Navigation link")}&gt;</span></a>
             </li>
           </ul>
         </li>
@@ -54,27 +60,29 @@ import { ReactComponent as SearchIcon } from "@uswds/uswds/img/usa-icons-bg/sear
             aria-expanded="false"
             aria-controls="basic-nav-section-two"
           >
-            <span>&lt;{t('Section')}&gt;</span>
+            <span>&lt;{t("Section")}&gt;</span>
           </button>
           <ul id="basic-nav-section-two" class="usa-nav__submenu">
             <li class="usa-nav__submenu-item">
-              <a href=""><span>&lt;{t('Navigation link')}&gt;</span></a>
+              <a href=""><span>&lt;{t("Navigation link")}&gt;</span></a>
             </li>
             <li class="usa-nav__submenu-item">
-              <a href=""><span>&lt;{t('Navigation link')}&gt;</span></a>
+              <a href=""><span>&lt;{t("Navigation link")}&gt;</span></a>
             </li>
             <li class="usa-nav__submenu-item">
-              <a href=""><span>&lt;{t('Navigation link')}&gt;</span></a>
+              <a href=""><span>&lt;{t("Navigation link")}&gt;</span></a>
             </li>
           </ul>
         </li>
         <li class="usa-nav__primary-item">
-          <a href="" class="usa-nav-link"><span>&lt;{t('Simple link')}&gt;</span></a>
+          <a href="" class="usa-nav-link"
+            ><span>&lt;{t("Simple link")}&gt;</span></a
+          >
         </li>
       </ul>
       <section aria-label={t("Search component")}>
         <form class="usa-search usa-search--small" role="search">
-          <label class="usa-sr-only" for="search-field">{t('Search')}</label>
+          <label class="usa-sr-only" for="search-field">{t("Search")}</label>
           <input
             class="usa-input"
             id="search-field"
@@ -82,7 +90,7 @@ import { ReactComponent as SearchIcon } from "@uswds/uswds/img/usa-icons-bg/sear
             name="search"
           />
           <button class="usa-button" type="submit">
-            <span class="usa-sr-only">{t('Search')}</span>
+            <span class="usa-sr-only">{t("Search")}</span>
             <SearchIcon className="usa-search__submit-icon" />
           </button>
         </form>
