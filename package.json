@@ -1,8 +1,7 @@
 {
-  "name": "astro-react-uswds",
+  "name": "astro-react-uswds-example",
   "version": "1.0.0",
   "description": "astro with react and us web design system (uswds)",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "prettier": "prettier --write .",
@@ -11,28 +10,32 @@
     "check:astro": "astro check",
     "check": "npm run check:prettier && npm run check:ts && npm run check:astro",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "astro-i18next generate && prettier --write src/pages --loglevel warn",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "prebuild": "NODE_ENV=production npm run generate",
+    "build": "NODE_ENV=production astro build",
     "preview": "astro preview"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paulathevalley/astro-react-uswds.git"
+    "url": "git+https://github.com/paulathevalley/astro-react-uswds-example.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/paulathevalley/astro-react-uswds/issues"
+    "url": "https://github.com/paulathevalley/astro-react-uswds-example/issues"
   },
-  "homepage": "https://github.com/paulathevalley/astro-react-uswds#readme",
+  "homepage": "https://github.com/paulathevalley/astro-react-uswds-example#readme",
   "dependencies": {
     "@uswds/uswds": "^3.3.0",
     "astro": "^1.9.2"
   },
   "devDependencies": {
+    "astro-i18next": "1.0.0-beta.17",
     "@astrojs/react": "^1.2.2",
+    "i18next-fs-backend": "^2.1.1",
     "prettier-plugin-astro": "^0.7.2",
     "sass": "^1.57.1",
     "vite-plugin-svgr": "^2.4.0"

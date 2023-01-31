@@ -1,15 +1,21 @@
 ---
+import i18next, { changeLanguage } from "i18next";
+import { HeadHrefLangs } from "astro-i18next/components";
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component front matter". It never runs in the browser.
 import Tutorial from "@components/Tutorial.jsx";
 import Header from "@components/Header.astro";
-
 import "@styles/styles.scss";
+
+changeLanguage("en");
 ---
 
 <!-- Below is your "component template." It's just HTML, but with
      some magic sprinkled in to help you build great templates. -->
-<html>
+<html lang={i18next.language}>
+  <head>
+    <HeadHrefLangs />
+  </head>
   <body>
     <Header />
     <Tutorial client:load />

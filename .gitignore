@@ -6,3 +6,6 @@ dist
 
 # typescript
 tsconfig.tsbuildinfo
+
+# Generated language files
+src/pages/es
