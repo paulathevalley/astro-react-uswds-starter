@@ -10,7 +10,7 @@ import astroI18next from "astro-i18next";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://astro.build/config
-export default defineConfig({  
+export default defineConfig({
   experimental: {
     integrations: true,
   },
