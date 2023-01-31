@@ -1,4 +1,14 @@
 {
   "Home": "Home",
-  "Menu": "Menu"
+  "Menu": "Menu",
+  "Primary navigation": "Primary navigation",
+  "Close": "Close",
+  "Current section": "Current section",
+  "Navigation link": "Navigation link",
+  "Section": "Section",
+  "Simple link": "Simple link",
+  "Search component": "Search component",
+  "Search": "Search",
+  "Next player:": "Next player:",
+  "Go to game start": "Go to game start"
 }
