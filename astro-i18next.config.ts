@@ -14,8 +14,7 @@ const config: AstroI18nextConfig = {
     // allow keys to be phrases having `:`, `.`
     keySeparator: false,
     nsSeparator: false,
-
-  }
+  },
 };
 
 export default config;
