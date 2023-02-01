@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "astro with react and us web design system (uswds)",
   "type": "module",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "prettier": "prettier --write .",
     "check:prettier": "prettier --check .",
