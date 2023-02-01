@@ -1,9 +1,11 @@
 {
-  "name": "astro-react-uswds",
+  "name": "astro-react-uswds-example",
   "version": "1.0.0",
   "description": "astro with react and us web design system (uswds)",
-  "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "prettier": "prettier --write .",
     "check:prettier": "prettier --check .",
@@ -18,15 +20,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paulathevalley/astro-react-uswds.git"
+    "url": "git+https://github.com/paulathevalley/astro-react-uswds-example.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/paulathevalley/astro-react-uswds/issues"
+    "url": "https://github.com/paulathevalley/astro-react-uswds-example/issues"
   },
-  "homepage": "https://github.com/paulathevalley/astro-react-uswds#readme",
+  "homepage": "https://github.com/paulathevalley/astro-react-uswds-example#readme",
   "dependencies": {
     "@uswds/uswds": "^3.3.0",
     "astro": "^1.9.2"
