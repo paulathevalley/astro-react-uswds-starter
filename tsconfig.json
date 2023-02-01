@@ -30,6 +30,6 @@
     },
     "types": ["astro/client"]
   },
-  "include": ["custom.d.ts", "**/*.ts", "**/*.tsx", "**/*.mjs"],
+  "include": ["@types/*.d.ts", "**/*.ts", "**/*.tsx", "**/*.mjs"],
   "exclude": ["node_modules"]
 }
