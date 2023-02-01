@@ -1,6 +1,5 @@
 import type { AstroI18nextConfig } from "astro-i18next";
 
-/** @type {import('astro-i18next').AstroI18nextConfig} */
 const config: AstroI18nextConfig = {
   defaultLocale: "en",
   locales: ["en", "es"],
@@ -15,9 +14,8 @@ const config: AstroI18nextConfig = {
     // allow keys to be phrases having `:`, `.`
     keySeparator: false,
     nsSeparator: false,
-    saveMissing: true,
-  },
-  i18nextPlugins: { fsBackend: "i18next-fs-backend" },
+
+  }
 };
 
 export default config;
