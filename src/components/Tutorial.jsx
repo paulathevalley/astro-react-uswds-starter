@@ -1,7 +1,7 @@
 // Tutorial: Tic-Tac-Toe
 // source: https://beta.reactjs.org/learn/tutorial-tic-tac-toe
 import { useState } from "react";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 function Square({ value, onSquareClick }) {
   return (
@@ -12,6 +12,7 @@ function Square({ value, onSquareClick }) {
 }
 
 function Board({ xIsNext, squares, onPlay }) {
+  const { t } = useTranslation("translation");
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
       return;
@@ -28,9 +29,10 @@ function Board({ xIsNext, squares, onPlay }) {
   const winner = calculateWinner(squares);
   let status;
   if (winner) {
-    status = t("Winner:") + winner;
+    status = t("Winner: {{winner}}", { winner });
   } else {
-    status = t("Next player:") + (xIsNext ? "X" : "O");
+    const nextPlayer = xIsNext ? "X" : "O";
+    status = t("Next player: {{nextPlayer}}", { nextPlayer });
   }
 
   return (
@@ -56,6 +58,7 @@ function Board({ xIsNext, squares, onPlay }) {
 }
 
 export default function Game() {
+  const { t } = useTranslation("translation");
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = useState(0);
   const xIsNext = currentMove % 2 === 0;
@@ -73,8 +76,9 @@ export default function Game() {
 
   const moves = history.map((squares, move) => {
     let description;
+
     if (move > 0) {
-      description = t("Go to move #") + move;
+      description = t("Go to move {{move}}", { move: move });
     } else {
       description = t("Go to game start");
     }

@@ -10,5 +10,6 @@
   "Search component": "Search component",
   "Search": "Search",
   "Next player:": "Next player:",
-  "Go to game start": "Go to game start"
+  "Go to game start": "Go to game start",
+  "Next player: {{nextPlayer}}": "Next player: {{nextPlayer}}"
 }
