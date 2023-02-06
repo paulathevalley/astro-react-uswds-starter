@@ -21,7 +21,7 @@ const config: AstroI18nextConfig = {
     debug: true,
   },
   i18nextServerPlugins: {
-    fsBackend: 'i18next-fs-backend',
+    fsBackend: "i18next-fs-backend",
     "{initReactI18next}": "react-i18next",
   },
   i18nextClientPlugins: {
