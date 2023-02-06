@@ -1,4 +1,10 @@
 ---
+import LOGO_PNG from "@uswds/uswds/img/logo-img.png";
+import FACEBOOK_SVG from "@uswds/uswds/img/usa-icons/facebook.svg";
+import TWITTER_SVG from "@uswds/uswds/img/usa-icons/twitter.svg";
+import YOUTUBE_SVG from "@uswds/uswds/img/usa-icons/youtube.svg";
+import INSTAGRAM_SVG from "@uswds/uswds/img/usa-icons/instagram.svg";
+import RSS_SVG from "@uswds/uswds/img/usa-icons/rss_feed.svg";
 ---
 
 <footer class="usa-footer">
@@ -46,11 +52,7 @@
           class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2"
         >
           <div class="mobile-lg:grid-col-auto">
-            <img
-              class="usa-footer__logo-img"
-              src="/assets/img/logo-img.png"
-              alt=""
-            />
+            <img class="usa-footer__logo-img" src={LOGO_PNG} alt="" />
           </div>
           <div class="mobile-lg:grid-col-auto">
             <p class="usa-footer__logo-heading">&lt;Name of Agency&gt;</p>
@@ -62,7 +64,7 @@
               <a class="usa-social-link" href="javascript:void(0);"
                 ><img
                   class="usa-social-link__icon"
-                  src="/assets/img/usa-icons/facebook.svg"
+                  src={FACEBOOK_SVG}
                   alt="Facebook"
                 /></a
               >
@@ -71,7 +73,7 @@
               <a class="usa-social-link" href="javascript:void(0);"
                 ><img
                   class="usa-social-link__icon"
-                  src="/assets/img/usa-icons/twitter.svg"
+                  src={TWITTER_SVG}
                   alt="Twitter"
                 /></a
               >
@@ -80,7 +82,7 @@
               <a class="usa-social-link" href="javascript:void(0);"
                 ><img
                   class="usa-social-link__icon"
-                  src="/assets/img/usa-icons/youtube.svg"
+                  src={YOUTUBE_SVG}
                   alt="YouTube"
                 /></a
               >
@@ -89,7 +91,7 @@
               <a class="usa-social-link" href="javascript:void(0);"
                 ><img
                   class="usa-social-link__icon"
-                  src="/assets/img/usa-icons/instagram.svg"
+                  src={INSTAGRAM_SVG}
                   alt="Instagram"
                 /></a
               >
@@ -98,7 +100,7 @@
               <a class="usa-social-link" href="javascript:void(0);"
                 ><img
                   class="usa-social-link__icon"
-                  src="/assets/img/usa-icons/rss_feed.svg"
+                  src={RSS_SVG}
                   alt="RSS"
                 /></a
               >
