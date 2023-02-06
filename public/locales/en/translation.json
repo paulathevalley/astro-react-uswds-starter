@@ -1,0 +1,16 @@
+{
+  "Home": "Home",
+  "Menu": "Menu",
+  "Primary navigation": "Primary navigation",
+  "Close": "Close",
+  "Current section": "Current section",
+  "Navigation link": "Navigation link",
+  "Section": "Section",
+  "Simple link": "Simple link",
+  "Search component": "Search component",
+  "Search": "Search",
+  "Go to game start": "Go to game start",
+  "Next player: {{nextPlayer}}": "Next player: {{nextPlayer}}",
+  "Go to move {{move}}": "Go to move {{move}}",
+  "Winner: {{winner}}": "Winner: {{winner}}"
+}

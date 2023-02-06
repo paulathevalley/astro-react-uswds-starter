@@ -15,7 +15,7 @@
     // Astro will directly run your TypeScript code, no transpilation needed.
     "noEmit": true,
     // Enable node-style module resolution, for things like npm package imports.
-    "moduleResolution": "node16",
+    "moduleResolution": "node",
     // Enable JSON imports.
     "resolveJsonModule": true,
     // Enable stricter transpilation for better output.
@@ -30,6 +30,6 @@
     },
     "types": ["astro/client"]
   },
-  "include": ["custom.d.ts", "**/*.ts", "**/*.tsx", "**/*.mjs"],
+  "include": ["@types/*.d.ts", "**/*.ts", "**/*.tsx", "**/*.mjs"],
   "exclude": ["node_modules"]
 }
