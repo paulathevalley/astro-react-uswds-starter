@@ -1,6 +1,7 @@
 ---
 import i18next, { changeLanguage } from "i18next";
 import { HeadHrefLangs } from "astro-i18next/components";
+import { LanguageSelector } from "astro-i18next/components";
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component front matter". It never runs in the browser.
 import Tutorial from "@components/Tutorial.jsx";
@@ -9,7 +10,6 @@ import Header from "@components/Header.astro";
 import Sidebar from "@components/Sidebar.astro";
 import Footer from "@components/Footer.astro";
 import Identifier from "@components/Identifier.astro";
-
 import "@styles/styles.scss";
 
 changeLanguage("en");
@@ -19,11 +19,20 @@ changeLanguage("en");
      some magic sprinkled in to help you build great templates. -->
 <html lang={i18next.language}>
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <HeadHrefLangs />
   </head>
   <body>
+    <script>
+      // @uswds assumes `window` is defined
+      // load accordion script once for all accordions on the page
+      import accordion from "@uswds/uswds/js/usa-accordion";
+      accordion.on();
+    </script>
     <a class="usa-skipnav" href="#main-content">Skip to main content</a>
     <Banner />
+    <LanguageSelector />
     <Header />
     <div class="usa-section">
       <div class="grid-container">

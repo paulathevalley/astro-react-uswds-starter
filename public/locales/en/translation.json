@@ -12,5 +12,11 @@
   "Go to game start": "Go to game start",
   "Next player: {{nextPlayer}}": "Next player: {{nextPlayer}}",
   "Go to move {{move}}": "Go to move {{move}}",
-  "Winner: {{winner}}": "Winner: {{winner}}"
+  "Winner: {{winner}}": "Winner: {{winner}}",
+  "Official website of the United States government": "Official website of the United States government",
+  "An official website of the United States government": "An official website of the United States government",
+  "Here’s how you know": "Here’s how you know",
+  "<strong>Official websites use .gov</strong><br>A <strong>.gov</strong> website belongs to an official government organization in the United States.": "<strong>Official websites use .gov</strong><br>A <strong>.gov</strong> website belongs to an official government organization in the United States.",
+  "Secure .gov websites use HTTPS": "Secure .gov websites use HTTPS",
+  "A <strong>lock</strong> ( <1><2> <3>Lock</3> <4> Locked padlock icon</4> <5></5> </2> </1>) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.": "A <strong>lock</strong> ( <1><2> <3>Lock</3> <4> Locked padlock icon</4> <5></5> </2> </1>) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites."
 }
