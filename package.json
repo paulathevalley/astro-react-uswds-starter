@@ -33,7 +33,7 @@
   "homepage": "https://github.com/paulathevalley/astro-react-uswds-example#readme",
   "dependencies": {
     "@uswds/uswds": "^3.3.0",
-    "astro": "^1.9.2",
+    "astro": "^2.0.5",
     "astro-i18next": "1.0.0-beta.17",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
