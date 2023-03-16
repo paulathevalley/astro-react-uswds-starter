@@ -14,6 +14,7 @@
     "check": "npm run check:prettier && npm run check:ts && npm run check:astro",
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate": "astro-i18next generate && prettier --write src/pages --loglevel warn",
+    "predev": "npm run generate",
     "dev": "astro dev",
     "start": "astro dev",
     "prebuild": "NODE_ENV=production npm run generate",
@@ -33,8 +34,8 @@
   "homepage": "https://github.com/paulathevalley/astro-react-uswds-example#readme",
   "dependencies": {
     "@uswds/uswds": "^3.4.0",
-    "astro": "^2.0.5",
-    "astro-i18next": "1.0.0-beta.17",
+    "astro": "^2.1.0",
+    "astro-i18next": "1.0.0-beta.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.1.5"
