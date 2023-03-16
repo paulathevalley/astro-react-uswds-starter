@@ -1,15 +1,9 @@
 ---
-import i18next, { changeLanguage, t } from "i18next";
-import { HeadHrefLangs } from "astro-i18next/components";
-import { LanguageSelector } from "astro-i18next/components";
+import { changeLanguage, t } from "i18next";
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component front matter". It never runs in the browser.
+import BasePage from "@layouts/BasePage.astro";
 import Tutorial from "@components/Tutorial.jsx";
-import Banner from "@components/Banner.astro";
-import Header from "@components/Header.astro";
-import Sidebar from "@components/Sidebar.astro";
-import Footer from "@components/Footer.astro";
-import Identifier from "@components/Identifier.astro";
 import "@styles/styles.scss";
 
 changeLanguage("en");
@@ -17,94 +11,59 @@ changeLanguage("en");
 
 <!-- Below is your "component template." It's just HTML, but with
      some magic sprinkled in to help you build great templates. -->
-<html lang={i18next.language}>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <HeadHrefLangs />
-  </head>
-  <body>
-    <script>
-      // @uswds assumes `window` is defined
-      // load accordion script once for all accordions on the page
-      // if accordions are added to the page dynamically, this package will not detect them
-      import accordion from "@uswds/uswds/js/usa-accordion";
-      accordion.on();
-    </script>
-    <a class="usa-skipnav" href="#main-content">{t("Skip to main content")}</a>
-    <Banner />
-    <div class="grid-container">
-      <div class="grid-row grid-gap margin-top-4">
-        <div class="grid-col-fill text-right">
-          <LanguageSelector showFlag />
-        </div>
-      </div>
-    </div>
-    <Header />
-    <div class="usa-section">
-      <div class="grid-container">
-        <div class="grid-row grid-gap">
-          <div class="usa-layout-docs__sidenav desktop:grid-col-3">
-            <Sidebar />
-          </div>
-          <main
-            class="usa-layout-docs__main desktop:grid-col-9 usa-prose usa-layout-docs"
-            id="main-content"
-          >
-            <h1>{t("Page heading (h1)")}</h1>
-            <p class="usa-intro">
-              {
-                t(
-                  "The page heading communicates the main focus of the page. Make your page heading descriptive and keep it succinct."
-                )
-              }
-            </p>
-            <h2 id="section-heading-h2">{t("Section heading (h2)")}</h2>
-            <p>
-              {
-                t(
-                  "These headings introduce, respectively, sections and subsections within your body copy. As you create these headings, follow the same guidelines that you use when writing section headings: Be succinct, descriptive, and precise."
-                )
-              }
-            </p>
-            <h3 id="section-heading-h3">{t("Subsection heading (h3)")}</h3>
-            <p>
-              {
-                t(
-                  "The particulars of your body copy will be determined by the topic of your page. Regardless of topic, it’s a good practice to follow the inverted pyramid structure when writing copy: Begin with the information that’s most important to your users and then present information of less importance."
-                )
-              }
-            </p>
-            <p>
-              {
-                t(
-                  "Keep each section and subsection focused — a good approach is to include one theme (topic) per section."
-                )
-              }
-            </p>
-            <h4 id="section-heading-h4">{t("Subsection heading (h4)")}</h4>
-            <p>
-              {
-                t(
-                  "Use the side navigation menu to help your users quickly skip to different sections of your page. The menu is best suited to displaying a hierarchy with one to three levels and, as we mentioned, to display the sub-navigation of a given page."
-                )
-              }
-            </p>
-            <p>
-              {
-                t(
-                  "Read the full documentation on our side navigation on the component page."
-                )
-              }
-            </p>
-            <h1>{t("An interactive section")}</h1>
-            <Tutorial client:load />
-            <!-- client: directive is required for hydrating React -->
-          </main>
-        </div>
-      </div>
-    </div>
-    <Footer />
-    <Identifier />
-  </body>
-</html>
+<BasePage>
+  <main
+    class="usa-layout-docs__main desktop:grid-col-9 usa-prose usa-layout-docs"
+    id="main-content"
+  >
+    <h1>{t("Page heading (h1)")}</h1>
+    <p class="usa-intro">
+      {
+        t(
+          "The page heading communicates the main focus of the page. Make your page heading descriptive and keep it succinct."
+        )
+      }
+    </p>
+    <h2 id="section-heading-h2">{t("Section heading (h2)")}</h2>
+    <p>
+      {
+        t(
+          "These headings introduce, respectively, sections and subsections within your body copy. As you create these headings, follow the same guidelines that you use when writing section headings: Be succinct, descriptive, and precise."
+        )
+      }
+    </p>
+    <h3 id="section-heading-h3">{t("Subsection heading (h3)")}</h3>
+    <p>
+      {
+        t(
+          "The particulars of your body copy will be determined by the topic of your page. Regardless of topic, it’s a good practice to follow the inverted pyramid structure when writing copy: Begin with the information that’s most important to your users and then present information of less importance."
+        )
+      }
+    </p>
+    <p>
+      {
+        t(
+          "Keep each section and subsection focused — a good approach is to include one theme (topic) per section."
+        )
+      }
+    </p>
+    <h4 id="section-heading-h4">{t("Subsection heading (h4)")}</h4>
+    <p>
+      {
+        t(
+          "Use the side navigation menu to help your users quickly skip to different sections of your page. The menu is best suited to displaying a hierarchy with one to three levels and, as we mentioned, to display the sub-navigation of a given page."
+        )
+      }
+    </p>
+    <p>
+      {
+        t(
+          "Read the full documentation on our side navigation on the component page."
+        )
+      }
+    </p>
+    <h1>{t("An interactive section")}</h1>
+    <Tutorial client:load />
+    <!-- client: directive is required for hydrating React -->
+  </main>
+</BasePage>
