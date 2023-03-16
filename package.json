@@ -7,6 +7,7 @@
     "node": ">=16.0.0"
   },
   "scripts": {
+    "clean": "rm -rf dist && rm -rf node_modules/.astro && rm -rf .astro/",
     "prettier": "prettier --write .",
     "check:prettier": "prettier --check .",
     "check:ts": "tsc --noEmit",
