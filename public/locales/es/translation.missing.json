@@ -22,5 +22,6 @@
   "Subsection heading (h4)": "Subsection heading (h4)",
   "Use the side navigation menu to help your users quickly skip to different sections of your page. The menu is best suited to displaying a hierarchy with one to three levels and, as we mentioned, to display the sub-navigation of a given page.": "Use the side navigation menu to help your users quickly skip to different sections of your page. The menu is best suited to displaying a hierarchy with one to three levels and, as we mentioned, to display the sub-navigation of a given page.",
   "Read the full documentation on our side navigation on the component page.": "Read the full documentation on our side navigation on the component page.",
-  "An interactive section": "An interactive section"
+  "An interactive section": "An interactive section",
+  "A <strong>lock</strong> ( <1><2> <3>Lock</3> <4> Locked padlock icon</4> <5></5> </2> </1>) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.": "A <strong>lock</strong> ( <1><2> <3>Lock</3> <4> Locked padlock icon</4> <5></5> </2> </1>) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites."
 }
