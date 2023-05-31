@@ -21,7 +21,6 @@ const config: AstroI18nextConfig = {
     keySeparator: false,
     nsSeparator: false,
     saveMissing: true,
-    updateMissing: true,
     // custom missing key handler
     // https://www.i18next.com/overview/configuration-options#missing-keys
     // missingKeyHandler: function (
