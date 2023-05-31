@@ -22,7 +22,7 @@ const config: AstroI18nextConfig = {
     nsSeparator: false,
     saveMissing: true,
     // Empty string is invalid, return fallback instead of ""
-    returnEmptyString: false
+    returnEmptyString: false,
   },
   i18nextClient: {
     debug: true,
