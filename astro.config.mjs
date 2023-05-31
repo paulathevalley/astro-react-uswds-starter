@@ -11,9 +11,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://astro.build/config
 export default defineConfig({
-  experimental: {
-    integrations: true,
-  },
   integrations: [react(), astroI18next()],
   // Pass additional configuration options to Vite: vitejs.dev
   vite: {
