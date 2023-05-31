@@ -16,6 +16,29 @@ const config: AstroI18nextConfig = {
     keySeparator: false,
     nsSeparator: false,
     saveMissing: true,
+    updateMissing: true,
+    // custom missing key handler
+    // https://www.i18next.com/overview/configuration-options#missing-keys
+    // missingKeyHandler: function (
+    //   lngs,
+    //   ns,
+    //   key,
+    //   fallbackValue,
+    //   updateMissing,
+    //   options
+    //   ) {
+    //   console.log('updateMissing', updateMissing, key)
+    //   if (key === fallbackValue) {
+    //     console.log('!!!key and fallback are equal', key)
+    //     // return key;
+    //   }
+    //   //   console.log('key', key, 'lngs', lngs, 'options', options)
+    // },
+    // parseMissingKeyHandler: function (key, defaultValue) {
+    //   // For 'en' the value and key are equal.
+    //   // return value to display
+    //   return key
+    // },
   },
   i18nextClient: {
     debug: true,
