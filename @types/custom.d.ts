@@ -9,7 +9,7 @@ declare module "@uswds/uswds/js/*" {
 
 declare module "*.svg" {
   const metadata: ImageMetadata;
- 	export default metadata;
+  export default metadata;
   // Add support for svgr plugin
   import React = require("react");
   export const ReactComponent: React.FC<React.SVGProps<SVGSVGElement>>;
