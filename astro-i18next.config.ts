@@ -5,6 +5,8 @@ const config: AstroI18nextConfig = {
   locales: ["en", "es"],
   defaultNamespace: "translation",
   load: ["server", "client"],
+  // Do not show /en/ in the URL
+  showDefaultLocale: false,
   i18nextServer: {
     initImmediate: false,
     debug: true,
@@ -12,10 +14,15 @@ const config: AstroI18nextConfig = {
       loadPath: "./public/locales/{{lng}}/{{ns}}.json",
       addPath: "./public/locales/{{lng}}/{{ns}}.missing.json",
     },
+    // do not load a fallback, instead use key as fallback
+    // https://www.i18next.com/principles/fallback#key-fallback
+    fallbackLng: false,
     // allow keys to be phrases that have `:` and `.`
     keySeparator: false,
     nsSeparator: false,
     saveMissing: true,
+    // Empty string is invalid, return fallback instead of ""
+    returnEmptyString: false,
   },
   i18nextClient: {
     debug: true,

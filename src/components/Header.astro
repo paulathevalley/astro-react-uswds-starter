@@ -2,6 +2,7 @@
 import { t } from "i18next";
 // assets
 import { ReactComponent as SearchIcon } from "@uswds/uswds/img/usa-icons-bg/search--white.svg";
+import { ReactComponent as CloseIcon } from "@uswds/uswds/img/usa-icons/close.svg";
 ---
 
 <script>
@@ -22,11 +23,7 @@ import { ReactComponent as SearchIcon } from "@uswds/uswds/img/usa-icons-bg/sear
     </div>
     <nav aria-label={t("Primary navigation")} class="usa-nav">
       <button type="button" class="usa-nav__close">
-        <img
-          src="/assets/img/usa-icons/close.svg"
-          role="img"
-          alt={t("Close")}
-        />
+        <CloseIcon role="img" aria-label={t("Close")} />
       </button>
       <ul class="usa-nav__primary usa-accordion">
         <li class="usa-nav__primary-item">

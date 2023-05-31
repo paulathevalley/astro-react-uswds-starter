@@ -30,5 +30,13 @@
   "Subsection heading (h4)": "Subsection heading (h4)",
   "Use the side navigation menu to help your users quickly skip to different sections of your page. The menu is best suited to displaying a hierarchy with one to three levels and, as we mentioned, to display the sub-navigation of a given page.": "Use the side navigation menu to help your users quickly skip to different sections of your page. The menu is best suited to displaying a hierarchy with one to three levels and, as we mentioned, to display the sub-navigation of a given page.",
   "Read the full documentation on our side navigation on the component page.": "Read the full documentation on our side navigation on the component page.",
-  "An interactive section": "An interactive section"
+  "An interactive section": "An interactive section",
+  "Parent link": "Parent link",
+  "Current page": "Current page",
+  "Grandchild link": "Grandchild link",
+  "Child link": "Child link",
+  "Return to top": "Return to top",
+  "Primary link": "Primary link",
+  "Agency Contact Center": "Agency Contact Center",
+  "(800) 555-GOVT": "(800) 555-GOVT"
 }
