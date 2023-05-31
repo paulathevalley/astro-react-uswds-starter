@@ -1,4 +1,5 @@
 ---
+import { Image } from "@astrojs/image/components";
 import CIRCLE_SVG from "@uswds/uswds/img/circle-gray-20.svg";
 ---
 
@@ -9,14 +10,14 @@ import CIRCLE_SVG from "@uswds/uswds/img/circle-gray-20.svg";
   >
     <div class="usa-identifier__container">
       <div class="usa-identifier__logos">
-        <a href="javascript:void(0)" class="usa-identifier__logo"
-          ><img
-            class="usa-identifier__logo-img"
+        <a href="javascript:void(0)" class="usa-identifier__logo">
+          <Image
             src={CIRCLE_SVG}
+            class="usa-identifier__logo-img"
             alt="<Parent agency> logo"
             role="img"
-          /></a
-        >
+          />
+        </a>
       </div>
       <section class="usa-identifier__identity" aria-label="Agency description">
         <p class="usa-identifier__identity-domain">domain.gov</p>

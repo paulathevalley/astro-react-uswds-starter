@@ -29,7 +29,8 @@
       "@layouts/*": ["src/layouts/*"],
       "@styles/*": ["src/styles/*"]
     },
-    "types": ["astro/client"]
+    // Replace `astro/client` with `@astrojs/image/client`
+    "types": ["@astrojs/image/client"]
   },
   "include": ["@types/*.d.ts", "**/*.ts", "**/*.tsx", "**/*.mjs"],
   "exclude": ["node_modules"]

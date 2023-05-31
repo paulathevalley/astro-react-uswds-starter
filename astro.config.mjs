@@ -3,6 +3,7 @@ import { fileURLToPath } from "url";
 
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
+import image from "@astrojs/image";
 import svgr from "vite-plugin-svgr";
 import astroI18next from "astro-i18next";
 
@@ -11,7 +12,16 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), astroI18next()],
+  integrations: [
+    react(),
+    astroI18next(),
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+      logLevel: "debug",
+      // by default transformed images are cached to `./node_modules/.astro/image`
+      // cacheDir: './node_modules/.astro/image'
+    }),
+  ],
   // Pass additional configuration options to Vite: vitejs.dev
   vite: {
     plugins: [svgr()],
