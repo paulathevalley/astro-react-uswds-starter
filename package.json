@@ -45,7 +45,7 @@
     "@astrojs/react": "^2.2.1",
     "typescript": "^5.0.4",
     "i18next-fs-backend": "^2.1.2",
-    "prettier-plugin-astro": "^0.9.1",
+    "prettier-plugin-astro": "^0.10.0",
     "sass": "^1.62.1",
     "vite-plugin-svgr": "^3.2.0"
   }
