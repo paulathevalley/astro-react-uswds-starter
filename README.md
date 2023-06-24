@@ -17,3 +17,6 @@ Run the astro dev server:
 ```shell
 npm run start
 ```
+
+## Images
+
