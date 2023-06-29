@@ -9,10 +9,11 @@
   // Set base asset paths:
   $theme-font-path: "@uswds/uswds/fonts",
   $theme-image-path: "@uswds/uswds/img",
+  // usa-icon-list bug:
+  // $theme-body-font-size: '2xs'
   // Control for viewing uswds notifications:
   $theme-show-notifications: false,
   // Any palettes added to this list will output utilities for background-color, border-color, color, text-decoration-color
   $global-color-palettes: ('palette-color-theme'),
-  $color-palettes: ('palette-color-theme'),
-  $theme-body-font-size: '2xs'
+  $color-palettes: ('palette-color-theme')
 );
