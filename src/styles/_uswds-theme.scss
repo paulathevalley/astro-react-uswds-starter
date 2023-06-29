@@ -10,5 +10,9 @@
   $theme-font-path: "@uswds/uswds/fonts",
   $theme-image-path: "@uswds/uswds/img",
   // Control for viewing uswds notifications:
-  $theme-show-notifications: false
+  $theme-show-notifications: false,
+  // Any palettes added to this list will output utilities for background-color, border-color, color, text-decoration-color
+  $global-color-palettes: ('palette-color-theme'),
+  $color-palettes: ('palette-color-theme'),
+  $theme-body-font-size: '2xs'
 );

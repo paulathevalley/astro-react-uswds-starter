@@ -1,0 +1,6 @@
+// Banner-only styles
+@use '@styles/custom';
+
+.wrapper {
+  @include custom.u-margin(0);
+}

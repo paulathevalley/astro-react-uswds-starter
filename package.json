@@ -16,8 +16,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate": "astro-i18next generate && prettier --write src/pages --loglevel warn",
     "predev": "npm run clean && npm run generate",
-    "dev": "astro dev",
-    "start": "astro dev",
+    "dev": "npm run clean && astro dev",
+    "start": "npm run dev",
     "prebuild": "NODE_ENV=production npm run generate",
     "build": "NODE_ENV=production astro build",
     "preview": "astro preview"

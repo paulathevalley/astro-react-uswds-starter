@@ -5,10 +5,12 @@ import { Trans } from "astro-i18next/components";
 import FLAG_PNG from "@uswds/uswds/img/us_flag_small.png";
 import GOV_SVG from "@uswds/uswds/img/icon-dot-gov.svg";
 import HTTPS_SVG from "@uswds/uswds/img/icon-https.svg";
+
+import styles from "./Banner.module.scss";
 ---
 
 <section
-  class="usa-banner"
+  class:list={["usa-banner", styles.wrapper]}
   aria-label={t("Official website of the United States government")}
 >
   <div class="usa-accordion">

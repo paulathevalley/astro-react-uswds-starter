@@ -1,6 +1,5 @@
-// Technical note: The @forward 'uswds' statement above references the uswds package in node_modules/@uswds/uswds/packages.
-@forward "uswds-theme";
-@forward "uswds";
+// Global styles
+@use 'custom'; // mixins are available with @use
 
 // Custom styles
 *,
@@ -11,4 +10,8 @@
 
 html {
   box-sizing: border-box;
+}
+
+.highlight {
+  @include custom.highlight();
 }
