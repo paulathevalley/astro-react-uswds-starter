@@ -14,7 +14,7 @@
     "check:astro": "astro check",
     "check": "npm run check:prettier && npm run check:ts && npm run check:astro",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate": "astro-i18next generate && prettier --write src/pages --loglevel warn",
+    "generate": "astro-i18next generate && prettier --write src/pages --log-level warn",
     "predev": "npm run clean && npm run generate",
     "dev": "astro dev",
     "start": "astro dev",
