@@ -1,7 +1,6 @@
 // Tutorial: Tic-Tac-Toe
 // source: https://beta.reactjs.org/learn/tutorial-tic-tac-toe
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
 
 function Square({ value, onSquareClick }) {
   return (
@@ -12,7 +11,10 @@ function Square({ value, onSquareClick }) {
 }
 
 function Board({ xIsNext, squares, onPlay }) {
-  const { t } = useTranslation("translation");
+  function t(input) {
+    return input;
+  }
+
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
       return;
@@ -58,7 +60,9 @@ function Board({ xIsNext, squares, onPlay }) {
 }
 
 export default function Game() {
-  const { t } = useTranslation("translation");
+  function t(input) {
+    return input;
+  }
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = useState(0);
   const xIsNext = currentMove % 2 === 0;

@@ -21,7 +21,7 @@
     // Enable stricter transpilation for better output.
     "isolatedModules": true,
     // https://docs.astro.build/en/guides/aliases/
-    "importsNotUsedAsValues": "error",
+    // "importsNotUsedAsValues": "error",
     "baseUrl": ".",
     "paths": {
       "@assets/*": ["src/assets/*"],

@@ -4,14 +4,13 @@ import { fileURLToPath } from "url";
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import svgr from "vite-plugin-svgr";
-import astroI18next from "astro-i18next";
 
 // In ESM, __dirname is no longer available
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), astroI18next()],
+  integrations: [react()],
   // Pass additional configuration options to Vite: vitejs.dev
   vite: {
     plugins: [svgr()],
