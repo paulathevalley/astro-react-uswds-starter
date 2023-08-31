@@ -29,7 +29,7 @@
       "@layouts/*": ["src/layouts/*"],
       "@locales/*": ["src/locales/*"],
       "@styles/*": ["src/styles/*"],
-      "@utils/*": ["src/utils/*"],
+      "@utils/*": ["src/utils/*"]
     },
     "types": ["astro/client"]
   },

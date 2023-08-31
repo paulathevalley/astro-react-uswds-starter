@@ -18,10 +18,12 @@ export const locales = {
 
 // https://astro.build/config
 export default defineConfig({
+  base: "/",
   trailingSlash: "always",
   build: {
     format: "directory",
   },
+  output: "static",
   integrations: [
     react(),
     i18n({
@@ -38,7 +40,14 @@ export default defineConfig({
   ],
   // Pass additional configuration options to Vite: vitejs.dev
   vite: {
-    plugins: [svgr()],
+    plugins: [
+      svgr({
+        svgrOptions: {
+          // https://react-svgr.com/docs/options/#ref
+          ref: true,
+        },
+      }),
+    ],
     ssr: {
       // Importing CSS files from @uswds package with file extension omitted e.g. @uswds/styles
       noExternal: ["@uswds"],

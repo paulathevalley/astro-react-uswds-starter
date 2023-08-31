@@ -3,7 +3,7 @@ import { getLocale } from "astro-i18n-aut";
 // layouts
 import BasePage from "@layouts/BasePage.astro";
 // components
-import Tutorial from "@components/Tutorial.jsx";
+import Tutorial from "@components/Tutorial";
 // utils
 import { t as baseT } from "@utils/t.js";
 // styles
@@ -11,6 +11,7 @@ import "@styles/styles.scss";
 
 // If locale is undefined, then it uses defaultLocale
 const locale = getLocale(Astro.url);
+
 function t(key) {
   return baseT(key, locale);
 }
