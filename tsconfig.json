@@ -27,7 +27,9 @@
       "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@styles/*": ["src/styles/*"]
+      "@locales/*": ["src/locales/*"],
+      "@styles/*": ["src/styles/*"],
+      "@utils/*": ["src/utils/*"],
     },
     "types": ["astro/client"]
   },
