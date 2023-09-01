@@ -12,9 +12,9 @@ export function t(key: keyof Translations, locale?: keyof typeof locales) {
   switch (locale) {
     case "es":
       if (esTranslations[key]) {
-        // console.log("es: found!", key);
         return esTranslations[key];
       } else {
+        // TODO: If not found, append key to translation.missing.json
         return key;
       }
     case "en":
@@ -27,3 +27,15 @@ export function t(key: keyof Translations, locale?: keyof typeof locales) {
   }
   return key;
 }
+
+// TODO: How should we handle translating HTML?
+// previously using the <Trans> component from "astro-i18next/components"
+/* 
+<Trans>
+  <h1>An <strong>emphasized</strong> heading with a <a href="/">link</a></h1>
+</Trans>
+
+would output the following key, perhaps?
+
+<0>An <1>emphasized</1> heading with a <2>link</2></0>
+*/
