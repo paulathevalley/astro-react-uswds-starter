@@ -8,3 +8,4 @@ dist
 tsconfig.tsbuildinfo
 
 # Generated language files
+astro_tmp_pages_*

@@ -1,11 +1,15 @@
 ---
+// layouts
 import BasePage from "@layouts/BasePage.astro";
-import Tutorial from "@components/Tutorial.jsx";
+// components
+import Tutorial from "@components/Tutorial";
+// utils
+import { getT } from "@utils/t.js";
+// styles
 import "@styles/styles.scss";
 
-function t(input) {
-  return input;
-}
+// If locale is undefined, then it uses defaultLocale
+const t = getT(Astro.url);
 ---
 
 <BasePage>
@@ -60,7 +64,7 @@ function t(input) {
       }
     </p>
     <h1>{t("An interactive section")}</h1>
-    <Tutorial client:load />
+    <Tutorial client:load url={Astro.url} />
     <!-- client: directive is required for hydrating React -->
   </main>
 </BasePage>
