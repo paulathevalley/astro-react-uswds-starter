@@ -1,14 +1,26 @@
-export const locales = {
-  en: "en-US", // the `defaultLocale` value must present in `locales` keys
-  es: "es-US",
-};
+import { getLocale } from "astro-i18n-aut";
+
 // translations
 import enTranslations from "@locales/en/translation.json";
 import esTranslations from "@locales/es/translation.json";
 
 type Translations = typeof enTranslations | typeof esTranslations;
 
-export function t(key: keyof Translations, locale?: keyof typeof locales) {
+export const locales = {
+  en: "en-US", // the `defaultLocale` value must present in `locales` keys
+  es: "es-US",
+};
+
+export const getT = (url: URL) => {
+  // If locale is undefined, it uses defaultLocale
+  const locale = getLocale(url) as keyof typeof locales;
+  return (key: keyof Translations) => t(key, locale);
+};
+
+export function t(
+  key: keyof Translations,
+  locale?: keyof typeof locales,
+): string {
   switch (locale) {
     case "es":
       if (esTranslations[key]) {
@@ -25,7 +37,6 @@ export function t(key: keyof Translations, locale?: keyof typeof locales) {
         return key;
       }
   }
-  return key;
 }
 
 // TODO: How should we handle translating HTML?

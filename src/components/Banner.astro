@@ -9,13 +9,9 @@ import FLAG_PNG from "@uswds/uswds/img/us_flag_small.png";
 import GOV_SVG from "@uswds/uswds/img/icon-dot-gov.svg";
 import HTTPS_SVG from "@uswds/uswds/img/icon-https.svg";
 // utils
-import { t as baseT } from "@utils/t.js";
+import { getT } from "@utils/t.js";
 
-// If locale is undefined, then it uses defaultLocale
-const locale = getLocale(Astro.url);
-function t(key) {
-  return baseT(key, locale);
-}
+const t = getT(Astro.url);
 ---
 
 <section

@@ -1,20 +1,15 @@
 ---
-import { getLocale } from "astro-i18n-aut";
 // layouts
 import BasePage from "@layouts/BasePage.astro";
 // components
 import Tutorial from "@components/Tutorial";
 // utils
-import { t as baseT } from "@utils/t.js";
+import { getT } from "@utils/t.js";
 // styles
 import "@styles/styles.scss";
 
 // If locale is undefined, then it uses defaultLocale
-const locale = getLocale(Astro.url);
-
-function t(key) {
-  return baseT(key, locale);
-}
+const t = getT(Astro.url);
 ---
 
 <BasePage>
@@ -69,7 +64,7 @@ function t(key) {
       }
     </p>
     <h1>{t("An interactive section")}</h1>
-    <Tutorial client:load />
+    <Tutorial client:load url={Astro.url} />
     <!-- client: directive is required for hydrating React -->
   </main>
 </BasePage>

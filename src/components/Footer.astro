@@ -6,10 +6,10 @@ import TWITTER_SVG from "@uswds/uswds/img/usa-icons/twitter.svg";
 import YOUTUBE_SVG from "@uswds/uswds/img/usa-icons/youtube.svg";
 import INSTAGRAM_SVG from "@uswds/uswds/img/usa-icons/instagram.svg";
 import RSS_SVG from "@uswds/uswds/img/usa-icons/rss_feed.svg";
+// utils
+import { getT } from "@utils/t.js";
 
-function t(input) {
-  return input;
-}
+const t = getT(Astro.url);
 ---
 
 <footer class="usa-footer">
