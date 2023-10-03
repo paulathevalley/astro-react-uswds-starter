@@ -56,7 +56,7 @@ const { t } = i18next;
           class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2"
         >
           <div class="mobile-lg:grid-col-auto">
-            <img class="usa-footer__logo-img" src={LOGO_PNG} alt="" />
+            <img class="usa-footer__logo-img" {...LOGO_PNG} alt="" />
           </div>
           <div class="mobile-lg:grid-col-auto">
             <p class="usa-footer__logo-heading">&lt;Name of Agency&gt;</p>
@@ -68,7 +68,7 @@ const { t } = i18next;
               <a class="usa-social-link" href="javascript:void(0);"
                 ><img
                   class="usa-social-link__icon"
-                  src={FACEBOOK_SVG}
+                  {...FACEBOOK_SVG}
                   alt="Facebook"
                 /></a
               >
@@ -77,7 +77,7 @@ const { t } = i18next;
               <a class="usa-social-link" href="javascript:void(0);"
                 ><img
                   class="usa-social-link__icon"
-                  src={TWITTER_SVG}
+                  {...TWITTER_SVG}
                   alt="Twitter"
                 /></a
               >
@@ -86,7 +86,7 @@ const { t } = i18next;
               <a class="usa-social-link" href="javascript:void(0);"
                 ><img
                   class="usa-social-link__icon"
-                  src={YOUTUBE_SVG}
+                  {...YOUTUBE_SVG}
                   alt="YouTube"
                 /></a
               >
@@ -95,18 +95,14 @@ const { t } = i18next;
               <a class="usa-social-link" href="javascript:void(0);"
                 ><img
                   class="usa-social-link__icon"
-                  src={INSTAGRAM_SVG}
+                  {...INSTAGRAM_SVG}
                   alt="Instagram"
                 /></a
               >
             </div>
             <div class="grid-col-auto">
               <a class="usa-social-link" href="javascript:void(0);"
-                ><img
-                  class="usa-social-link__icon"
-                  src={RSS_SVG}
-                  alt="RSS"
-                /></a
+                ><img class="usa-social-link__icon" {...RSS_SVG} alt="RSS" /></a
               >
             </div>
           </div>
