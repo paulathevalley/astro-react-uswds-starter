@@ -3,10 +3,8 @@ import Backend, { type FsBackendOptions } from 'i18next-fs-backend';
 
 const setDebug = process.env.NODE_ENV === 'production' ? false : true
 
-// TODO: Do not show /en/ in the URL 
-
-// Load resources using Backend plugin: https://www.i18next.com/how-to/add-or-load-translations#load-using-a-backend-plugin
 await i18next
+  // Load resources using Backend plugin: https://www.i18next.com/how-to/add-or-load-translations#load-using-a-backend-plugin
   .use(Backend)
   .init<FsBackendOptions>({
     debug: setDebug,

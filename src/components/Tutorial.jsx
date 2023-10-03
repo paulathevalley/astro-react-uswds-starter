@@ -29,7 +29,7 @@ function Board({ xIsNext, squares, onPlay, t }) {
   const winner = calculateWinner(squares);
   let status;
   if (winner) {
-    status = t("Winner!!!: {{winner}}", { winner });
+    status = t("Winner: {{winner}}", { winner });
   } else {
     const nextPlayer = xIsNext ? "X" : "O";
     status = t("Next player: {{nextPlayer}}", { nextPlayer });
