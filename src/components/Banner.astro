@@ -1,17 +1,11 @@
 ---
-import { getLocale } from "astro-i18n-aut";
-
-// TODO: How to handle HTML?
-// import { Trans } from "astro-i18next/components";
-
+import i18next from "@i18n/index";
 // assets
 import FLAG_PNG from "@uswds/uswds/img/us_flag_small.png";
 import GOV_SVG from "@uswds/uswds/img/icon-dot-gov.svg";
 import HTTPS_SVG from "@uswds/uswds/img/icon-https.svg";
-// utils
-import { getT } from "@utils/t.js";
 
-const t = getT(Astro.url);
+const { t } = i18next;
 ---
 
 <section
@@ -25,7 +19,7 @@ const t = getT(Astro.url);
           <img
             aria-hidden="true"
             class="usa-banner__header-flag"
-            src={FLAG_PNG}
+            {...FLAG_PNG}
             alt=""
           />
         </div>
@@ -54,7 +48,7 @@ const t = getT(Astro.url);
         <div class="usa-banner__guidance tablet:grid-col-6">
           <img
             class="usa-banner__icon usa-media-block__img"
-            src={GOV_SVG}
+            {...GOV_SVG}
             role="img"
             alt=""
             aria-hidden="true"
@@ -70,7 +64,7 @@ const t = getT(Astro.url);
         <div class="usa-banner__guidance tablet:grid-col-6">
           <img
             class="usa-banner__icon usa-media-block__img"
-            src={HTTPS_SVG}
+            {...HTTPS_SVG}
             role="img"
             alt=""
             aria-hidden="true"

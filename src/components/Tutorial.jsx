@@ -1,7 +1,8 @@
 // Tutorial: Tic-Tac-Toe
 // source: https://beta.reactjs.org/learn/tutorial-tic-tac-toe
 import { useState } from "react";
-import { getT } from "@utils/t";
+import i18next from "@i18n/index";
+const { t } = i18next;
 
 function Square({ value, onSquareClick }) {
   return (
@@ -57,7 +58,7 @@ function Board({ xIsNext, squares, onPlay, t }) {
 }
 
 export default function Game({ url }) {
-  const t = getT(url);
+  // const t = getT(url);
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = useState(0);
   const xIsNext = currentMove % 2 === 0;
