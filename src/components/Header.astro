@@ -1,11 +1,10 @@
 ---
+import i18next from "@i18n/index";
 // assets
 import { ReactComponent as SearchIcon } from "@uswds/uswds/img/usa-icons-bg/search--white.svg";
 import { ReactComponent as CloseIcon } from "@uswds/uswds/img/usa-icons/close.svg";
-// utils
-import { getT } from "@utils/t.js";
 
-const t = getT(Astro.url);
+const { t } = i18next;
 ---
 
 <script>

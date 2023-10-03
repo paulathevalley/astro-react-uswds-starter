@@ -1,4 +1,5 @@
 ---
+import i18next from "@i18n/index";
 // assets
 import LOGO_PNG from "@uswds/uswds/img/logo-img.png";
 import FACEBOOK_SVG from "@uswds/uswds/img/usa-icons/facebook.svg";
@@ -6,10 +7,8 @@ import TWITTER_SVG from "@uswds/uswds/img/usa-icons/twitter.svg";
 import YOUTUBE_SVG from "@uswds/uswds/img/usa-icons/youtube.svg";
 import INSTAGRAM_SVG from "@uswds/uswds/img/usa-icons/instagram.svg";
 import RSS_SVG from "@uswds/uswds/img/usa-icons/rss_feed.svg";
-// utils
-import { getT } from "@utils/t.js";
 
-const t = getT(Astro.url);
+const { t } = i18next;
 ---
 
 <footer class="usa-footer">

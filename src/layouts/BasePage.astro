@@ -1,5 +1,6 @@
 ---
 import { getLocale } from "astro-i18n-aut";
+import i18next from "@i18n/index";
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component front matter". It never runs in the browser.
 import Banner from "@components/Banner.astro";
@@ -7,21 +8,18 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import Sidebar from "@components/Sidebar.astro";
 import Identifier from "@components/Identifier.astro";
-// utils
-import { t as baseT } from "@utils/t.js";
 // styles
 import "@styles/styles.scss";
 
-const locale = getLocale(Astro.url);
-
-function t(key) {
-  return baseT(key, locale);
-}
+// If locale is undefined, then it uses defaultLocale
+const lang = getLocale(Astro.url) || "en";
+i18next.changeLanguage(lang);
+const { t } = i18next;
 ---
 
 <!-- Below is your "component template." It's just HTML, but with
      some magic sprinkled in to help you build great templates. -->
-<html lang={locale || "en"}>
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />

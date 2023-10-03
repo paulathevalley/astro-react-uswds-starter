@@ -1,9 +1,9 @@
 ---
+import i18next from "@i18n/index";
+// assets
 import CIRCLE_SVG from "@uswds/uswds/img/circle-gray-20.svg";
-// utils
-import { getT } from "@utils/t.js";
 
-const t = getT(Astro.url);
+const { t } = i18next;
 ---
 
 <div class="usa-identifier">
@@ -45,32 +45,32 @@ const t = getT(Astro.url);
         </li>
         <li class="usa-identifier__required-links-item">
           <a href="" class="usa-identifier__required-link usa-link"
-            >Accessibility support</a
+            >{t("Accessibility support")}</a
           >
         </li>
         <li class="usa-identifier__required-links-item">
           <a href="" class="usa-identifier__required-link usa-link"
-            >FOIA requests</a
+            >{t("FOIA requests")}</a
           >
         </li>
         <li class="usa-identifier__required-links-item">
           <a href="" class="usa-identifier__required-link usa-link"
-            >No FEAR Act data</a
+            >{t("No FEAR Act data")}</a
           >
         </li>
         <li class="usa-identifier__required-links-item">
           <a href="" class="usa-identifier__required-link usa-link"
-            >Office of the Inspector General</a
+            >{t("Office of the Inspector General")}</a
           >
         </li>
         <li class="usa-identifier__required-links-item">
           <a href="" class="usa-identifier__required-link usa-link"
-            >Performance reports</a
+            >{t("Performance reports")}</a
           >
         </li>
         <li class="usa-identifier__required-links-item">
           <a href="" class="usa-identifier__required-link usa-link"
-            >Privacy policy</a
+            >{t("Privacy policy")}</a
           >
         </li>
       </ul>
@@ -82,9 +82,9 @@ const t = getT(Astro.url);
   >
     <div class="usa-identifier__container">
       <div class="usa-identifier__usagov-description">
-        Looking for U.S. government information and services?
+        {t("Looking for U.S. government information and services?")}
       </div>
-      <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
+      <a href="https://www.usa.gov/" class="usa-link">{t("Visit USA.gov")}</a>
     </div>
   </section>
 </div>

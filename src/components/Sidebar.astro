@@ -1,8 +1,7 @@
 ---
-// utils
-import { getT } from "@utils/t.js";
+import i18next from "@i18n/index";
 
-const t = getT(Astro.url);
+const { t } = i18next;
 ---
 
 <nav aria-label="Secondary navigation">
