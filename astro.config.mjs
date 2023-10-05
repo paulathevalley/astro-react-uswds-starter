@@ -2,7 +2,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 import { defineConfig } from "astro/config";
-import { i18n, defaultLocaleSitemapFilter } from "astro-i18n-aut/integration";
+import { i18n, filterSitemapByDefaultLocale } from "astro-i18n-aut/integration";
 import sitemap from "@astrojs/sitemap";
 import react from "@astrojs/react";
 import svgr from "vite-plugin-svgr";
@@ -18,7 +18,8 @@ export const locales = {
 
 // https://astro.build/config
 export default defineConfig({
-  base: "/",
+  site: "https://example.com/",
+  base: "/build_with_base_path/",
   trailingSlash: "always",
   build: {
     format: "directory",
@@ -35,7 +36,7 @@ export default defineConfig({
         locales,
         defaultLocale,
       },
-      filter: defaultLocaleSitemapFilter({ defaultLocale }),
+      filter: filterSitemapByDefaultLocale({ defaultLocale }),
     }),
   ],
   // Pass additional configuration options to Vite: vitejs.dev
