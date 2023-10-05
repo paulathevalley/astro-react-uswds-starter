@@ -1,0 +1,22 @@
+---
+import { getLocale } from "astro-i18n-aut";
+import i18next from "@i18n/index";
+// layouts
+import BasePage from "@layouts/BasePage.astro";
+// styles
+import "@styles/styles.scss";
+
+// If locale is undefined, then it uses defaultLocale
+const lang = getLocale(Astro.url) || "en";
+i18next.changeLanguage(lang);
+const { t } = i18next;
+---
+
+<BasePage>
+  <main
+    class="usa-layout-docs__main desktop:grid-col-9 usa-prose usa-layout-docs"
+    id="main-content"
+  >
+    <h1>{t("Subpage heading (h1)")}</h1>
+  </main>
+</BasePage>
