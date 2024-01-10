@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/paulathevalley/astro-react-uswds-example#readme",
   "dependencies": {
-    "@astrojs/check": "^0.2.0",
+    "@astrojs/check": "^0.4.0",
     "@astrojs/sitemap": "^3.0.4",
     "@uswds/uswds": "^3.6.1",
     "astro": "^4.0.3",
