@@ -25,6 +25,17 @@ export default defineConfig({
     format: "directory",
   },
   output: "static",
+  // TODO: https://docs.astro.build/en/guides/internationalization/
+  // i18n: {
+  //   defaultLocale: "en",
+  //   locales: ["en", "es"],
+  //   routing: {
+  //     prefixDefaultLocale: false // Do not add /en/ to routes
+  //   },
+  //   fallback: {
+  //     es: "en"
+  //   }
+  // },
   integrations: [
     react(),
     i18n({

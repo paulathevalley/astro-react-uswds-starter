@@ -8,6 +8,7 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import Sidebar from "@components/Sidebar.astro";
 import Identifier from "@components/Identifier.astro";
+import LanguageSelector from "@components/LanguageSelector.astro";
 // styles
 import "@styles/styles.scss";
 
@@ -38,8 +39,7 @@ const { t } = i18next;
     <div class="grid-container">
       <div class="grid-row grid-gap margin-top-4">
         <div class="grid-col-fill text-right">
-          <!-- <LanguageSelector showFlag /> -->
-           change language here
+          <LanguageSelector />
         </div>
       </div>
     </div>

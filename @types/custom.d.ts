@@ -7,8 +7,11 @@ declare module "@uswds/uswds/js/*" {
   export default module;
 }
 
-declare module "*.svg" {
+declare module "*.svg?react" {
   // Add support for svgr plugin
   import React = require("react");
-  export const ReactComponent: React.FC<React.SVGProps<SVGSVGElement>>;
+  const ReactComponent: React.FunctionComponent<
+    React.ComponentProps<"svg"> & { title?: string }
+  >;
+  export default ReactComponent;
 }
