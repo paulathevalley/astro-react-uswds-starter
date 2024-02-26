@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/paulathevalley/astro-react-uswds-example#readme",
   "dependencies": {
-    "@astrojs/check": "^0.4.0",
+    "@astrojs/check": "^0.5.5",
     "@astrojs/sitemap": "^3.0.5",
     "@uswds/uswds": "^3.6.1",
     "astro": "^4.3.2",
@@ -44,7 +44,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@astrojs/react": "^3.0.3",
+    "@astrojs/react": "^3.0.10",
     "prettier": "^3.2.2",
     "prettier-plugin-astro": "^0.12.0",
     "sass": "^1.70.0",
