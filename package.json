@@ -36,7 +36,7 @@
     "@astrojs/check": "^0.5.5",
     "@astrojs/sitemap": "^3.0.5",
     "@uswds/uswds": "^3.6.1",
-    "astro": "^4.3.2",
+    "astro": "^4.4.9",
     "astro-i18n-aut": "^0.6.5",
     "i18next": "^23.10.0",
     "i18next-fs-backend": "^2.2.0",
