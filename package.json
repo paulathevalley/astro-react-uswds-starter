@@ -46,7 +46,7 @@
   "devDependencies": {
     "@astrojs/react": "^3.0.10",
     "prettier": "^3.2.2",
-    "prettier-plugin-astro": "^0.12.0",
+    "prettier-plugin-astro": "^0.13.0",
     "sass": "^1.70.0",
     "typescript": "^5.2.2",
     "vite-plugin-svgr": "^4.2.0"
